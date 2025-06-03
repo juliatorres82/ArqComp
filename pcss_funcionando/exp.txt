@@ -1,0 +1,21 @@
+-- o processador está funcionando, mas ainda não juntamos TUDO (ula_banco_acu + UC + rom_pc_RInst)
+
+opcodes:
+
+1111: soma
+0000: subtração
+1000: jump
+
+
+ULA:
+--couting leading zeroes
+--subtração com borrow (ok)
+--cmpi (ok)
+
+máquina de estados:
+00: fetch
+01: decode
+
+
+algumas instruções para a rom:
+addi 

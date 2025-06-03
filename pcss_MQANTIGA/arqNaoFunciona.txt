@@ -1,0 +1,191 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity bancoRegistradores_tb is 
+end entity;
+
+architecture bancoRegistradores_tb of bancoRegistradores_tb is
+    component bancoRegistradores is
+        port (
+            clk     : in std_logic;
+            rst     : in std_logic;
+            wr_en   : in std_logic;
+            reg_r  : in unsigned(3 downto 0); 
+            data_wr : in unsigned(15 downto 0); 
+            data_out: out unsigned(15 downto 0)
+        );
+    end component;
+
+-- testes:
+-- 1. se o reset geral esta funcionando
+-- 2. se dá p escrever em tds os registradores
+-- 3. se dá p ler tds os registradores (pelo data_out)
+
+    constant period_time: time := 100 ns; --periodo de um clock
+    signal   finished   : std_logic := '0';
+    signal   clk, rst   : std_logic := '0';
+    signal   wr_en      : std_logic := '0';
+    signal   reg_r      : unsigned(3 downto 0) := "0000";
+    signal   data_wr    : unsigned(15 downto 0) := "0000000000000000";
+    signal   data_out   : unsigned(15 downto 0) := "0000000000000000";
+
+    begin 
+        uut: bancoRegistradores
+            port map (
+                clk     => clk,
+                rst     => rst,
+                wr_en   => wr_en,
+                reg_r  => reg_r,
+                data_wr => data_wr,
+                data_out=> data_out
+            );
+
+        reset_global: process 
+        begin 
+            rst <= '1';
+            wait for period_time*2;
+            rst <= '0';
+            wait;
+        end process;
+
+        tester1: process
+        begin
+            reg_r <= "0000";
+            wr_en <= '1';
+            data_wr <= "0000000011111111";
+            wait for 20 ns;
+            wr_en <= '0';
+            wait for 20 ns;
+            wait;
+        end process;
+
+        tester2: process
+        begin
+            reg_r <= "0001";
+            wr_en <= '1';
+            data_wr <= "0000000010000000";
+            wait for 20 ns;
+            wr_en <= '0';
+            wait for 20 ns;
+            wait;
+        end process;
+
+        tester3: process
+        begin
+            reg_r <= "0010";
+            wr_en <= '1';
+            data_wr <= "0000000000000010";
+            wait for 20 ns;
+            wr_en <= '0';
+            wait for 20 ns;
+            wait;
+        end process;
+
+        tester4: process
+        begin
+            reg_r <= "0011";
+            wr_en <= '1';
+            data_wr <= "0000000000000011";
+            wait for 20 ns;
+            wr_en <= '0';
+            wait for 20 ns;
+            wait;
+        end process;
+
+        tester5: process
+        begin
+            reg_r <= "0100";
+            wr_en <= '1';
+            data_wr <= "0000000000000100";
+            wait for 20 ns;
+            wr_en <= '0';
+            wait for 20 ns;
+            wait;
+        end process;
+
+        tester6: process
+        begin
+            reg_r <= "0101";
+            wr_en <= '1';
+            data_wr <= "0000000011110101";
+            wait for 20 ns;
+            wr_en <= '0';
+            wait for 20 ns;
+            wait;
+        end process;
+
+        tester7: process
+        begin
+            reg_r <= "0110";
+            wr_en <= '1';
+            data_wr <= "0000000011010101";
+            wait for 20 ns;
+            wr_en <= '0';
+            wait for 20 ns;
+            wait;
+        end process;
+
+        tester8: process
+        begin
+            reg_r <= "0111";
+            wr_en <= '1';
+            data_wr <= "0000000000000111";
+            wait for 20 ns;
+            wr_en <= '0';
+            wait for 20 ns;
+            wait;
+        end process;
+
+        tester9: process
+        begin
+            reg_r <= "1000";
+            wr_en <= '1';
+            data_wr <= "0000000011101000";
+            wait for 20 ns;
+            wr_en <= '0';
+            wait for 20 ns;
+            wait;
+        end process;
+
+        tester10: process
+        begin
+            reg_r <= "1001";
+            wr_en <= '1';
+            data_wr <= "0000000011110001";
+            wait for 20 ns;
+            wr_en <= '0';
+            wait for 20 ns;
+            wait;
+        end process;
+
+
+        testa2WR: process
+        begin 
+            wait for 200 ns;
+            wr_en <= '1';
+            data_wr <= "1110000011110000";
+            wait for 20 ns;
+            data_wr <= "0000000011111111";
+            wait for 20 ns;
+            wait;
+        end process;
+            
+        clk_process: process
+        begin
+            while (finished = '0') loop
+            clk <= '0';
+            wait for period_time/2;
+            clk <= '1';
+            wait for period_time/2;
+            end loop;
+            wait;
+        end process;
+
+        finish_sim: process
+        begin
+            wait for 1000 ns; --tempo total da simulacao
+            finished <= '1';
+            wait;
+        end process;
+        end architecture bancoRegistradores_tb;

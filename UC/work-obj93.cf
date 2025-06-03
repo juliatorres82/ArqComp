@@ -1,0 +1,7 @@
+v 4
+file . "tb_UnidadeControle.vhd" "096f578d4da9341a3c24b6b8e916c52ea5a82a8f" "20250528230525.135":
+  entity tb_unidadecontrole at 1( 0) + 0 on 13;
+  architecture auc of tb_unidadecontrole at 8( 112) + 0 on 14;
+file . "UnidadeControle.vhd" "64ce71593ce1efff2d4f7248466cc20f4ab22243" "20250528230000.271":
+  entity unidadecontrole at 1( 0) + 0 on 11;
+  architecture a_unidadecontrole of unidadecontrole at 21( 593) + 0 on 12;

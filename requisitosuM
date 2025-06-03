@@ -1,0 +1,13 @@
+REQUISITOS MICROPROCESSADOR
+- ULA com acumulador
+- Largura da ROM/ instrução de bits: 16
+- Número de registradores em banco: 10
+- ADD ops: ADD com dois operandos apenas
+- Carga de constantes: carrega diretamente com LD sem somar
+- SUB ops: subtração com dois operandos apenas
+-Subtração unicamente com SUBB com borrow
+-Comparações: comparar apenas com CMPI
+-Saltos condicionais [BNE, BPL]
+-Saltos: incondicional é absoluto e condicional é relativo
+-Validações: final do loop: CLZ igual a (n-5) (count leading zeroes)
+-Validação: complicações: tabela de crivo começa no endereço 41 da RAM

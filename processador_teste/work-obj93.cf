@@ -1,0 +1,55 @@
+v 4
+file . "UnidadeControle.vhd" "22e129ccc9563eb9c9767a7ca71afdf26329f431" "20250603120222.713":
+  entity unidadecontrole at 1( 0) + 0 on 251;
+  architecture a_unidadecontrole of unidadecontrole at 30( 1173) + 0 on 252;
+file . "ROM_pc_regInst.vhd" "70607d2004ecab661898b3aa9b724f2461535c98" "20250603013058.456":
+  entity rom_pc_reginst at 1( 0) + 0 on 243;
+  architecture a_rom_pc of rom_pc_reginst at 16( 369) + 0 on 244;
+file . "rom_pc_tb.vhd" "25cf910572ad3805a5ed1f6245fad712a44c778e" "20250603013109.967":
+  entity rom_pc_tb at 1( 0) + 0 on 245;
+  architecture sim of rom_pc_tb at 8( 103) + 0 on 246;
+file . "ROM_pc.vhd" "23e6e4df747df14e363382c0c675a51b3634d29a" "20250531230638.239":
+  entity rom_pc at 1( 0) + 0 on 185;
+  architecture a_rom_pc of rom_pc at 18( 399) + 0 on 186;
+file . "PC.vhd" "f7d3f9ed60497251f87e88877c1bd0d976e6b233" "20250603010749.459":
+  entity pc at 1( 0) + 0 on 223;
+  architecture a_pc of pc at 15( 297) + 0 on 224;
+file . "ROM_tb.vhd" "1f496eafb26a486271dc146afc4e95a8c62aed8f" "20250525181833.154":
+  entity rom_tb at 1( 0) + 0 on 171;
+  architecture sim of rom_tb at 8( 100) + 0 on 172;
+file . "tb_ula_banco_acu.vhd" "5a9beee54952b64f839c6e36ccbe662e2899f362" "20250524214231.052":
+  entity tb_ula_banco_acu at 1( 0) + 0 on 167;
+  architecture atbuba of tb_ula_banco_acu at 8( 110) + 0 on 168;
+file . "ula_banco_acu.vhd" "98b325db7d125b04c8fe5930517db31a3561964f" "20250524214016.296":
+  entity ula_banco_acu at 1( 0) + 0 on 165;
+  architecture a_ula_banco_acu of ula_banco_acu at 23( 521) + 0 on 166;
+file . "registrador.vhd" "107838e86d6e36edac905966152e03bb4cff42ba" "20250521003547.993":
+  entity registrador at 1( 0) + 0 on 19;
+  architecture a_registrador of registrador at 15( 308) + 0 on 20;
+file . "acumulador.vhd" "e08289c5a415d5f8093aa996019460ec02db759d" "20250524142206.534":
+  entity acumulador at 1( 0) + 0 on 125;
+  architecture a_acumulador of acumulador at 15( 307) + 0 on 126;
+file . "ULA.vhd" "d298180b6e7cdd3e424a9ec1852694a7b1a204c7" "20250529200716.767":
+  entity ula at 1( 0) + 0 on 173;
+  architecture a_ula of ula at 20( 534) + 0 on 174;
+file . "bancoRegistradores.vhd" "ac99c7e07f9ab1eaad48817277acb915b7193941" "20250523011915.846":
+  entity bancoregistradores at 1( 0) + 0 on 101;
+  architecture a_bancoregistradores of bancoregistradores at 18( 458) + 0 on 102;
+file . "simulaTudo.vhd" "023dbeeeb1f92786176aefc24e64bba9573ba914" "20250524200537.418":
+  entity simulatudo at 1( 0) + 0 on 161;
+  architecture a_simulatudo of simulatudo at 8( 108) + 0 on 162;
+file . "ULA_tb.vhd" "2989424b39eeaf717aca94439964020e4633640c" "20250521014004.366":
+  entity ula_tb at 2( 14) + 0 on 41;
+  architecture sim of ula_tb at 9( 114) + 0 on 42;
+file . "ROM.vhd" "5ede8850455e18ca78343b466d3ac938ce5be055" "20250603013046.062":
+  entity rom at 1( 0) + 0 on 241;
+  architecture a_rom of rom at 13( 274) + 0 on 242;
+file . "addPC.vhd" "3bd035cdf51e5dcf3ed5fefb3d0b9dfa9c800a47" "20250603010800.833":
+  entity addpc at 1( 0) + 0 on 225;
+  architecture a_addpc of addpc at 13( 243) + 0 on 226;
+file . "RegInstrucao.vhd" "b43d04ec2a78174a2bb9c7e5b61cc860ee366379" "20250531234640.920":
+  entity reginstrucao at 1( 0) + 0 on 189;
+  architecture a_reginstrucao of reginstrucao at 15( 309) + 0 on 190;
+file . "maq_estados.vhd" "3623471da8bf5a08e54cdcdd75e7591a78dd1a19" "20250603120213.565":
+  entity maq_estados at 1( 0) + 0 on 249;
+  architecture a_maq_estados of maq_estados at 12( 195) + 0 on 250;

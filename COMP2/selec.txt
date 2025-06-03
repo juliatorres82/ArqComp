@@ -1,0 +1,32 @@
+Exercícios selecionados: 1, 2, 3, 4, 7, 8
+
+
+1) 1010 1100
+
+2) "Carry" é o estouro de um número unsigned e "overflow", de um número signed, ambos resultado de uma operação.
+ Exemplo:
+ overflow: 
+ 7 + 2 = 9 (base 10)
+ 0111 + 0010 = 1001, mas 1001 = -7 em decimal; 
+ 	   
+ 	   
+carry:     
+ 8 + 8 = 16 (base 10)
+em 4 bits (base 2) 1000 + 1000 = CARRY [gera carry out (10000)]
+
+
+3) com 6 bits, podemos representar os números de -32 a +31.
+a) 010010 (descarta o carry out da esquerda)
+b) +18
+c) sim
+d) sim
+
+
+4) As operaçõs de soma, subtração e shift à esquerda (<<) são as mesmas para signed e unsigned (A forma como elas são feitas é exatamente a mesma, sem avaliar se o número é positivo ou negativo.
+Comparações (>,<, <=, >=), divisão, módulo e shift à direita (>>) são diferentes para tipos signed e unsigned.
+
+
+7) 22 (base 10) = 010110 (base 2)
+
+
+8) 8 (base 10) = 001000 (base 2)

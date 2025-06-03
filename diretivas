@@ -1,0 +1,26 @@
+DIRETIVAS NO ASSEMBLY:
+	- são comandos para o MONTADOR (assembler), NÃO para o processador!
+	- elas NÃO geram instruções, só inicializações 
+	
+diretivas .data:
+
+.data
+frase:   .asciz "declara uma frase na memoria"
+valores: .word 10,-5,123 #coloca 3 inteiros na memória, cada um com 32 bits (4 bytes)
+
+#os valores vão p/ endereços consecutivos na memória (a partir do endereço inicial do rótulo "valores"
+
+.text
+a partir dessa diretiva, começa o CÓDIGO EXECUTÁVEL
+
+comandos importantes:
+
+la - load adress (CARREGA O ENDEREÇO DE MEMÓRIA EM UM REGISTRADOR)
+
+
+
+
+DIRETIVAS DO VHDL:
+
+- em qualquer lugar do código (que não dentro de um process), TUDO é executado AO MESMO TEMPO E O TEMPO TODO.
+- dentro do process, os comandos são executados SEQUENCIALMENTE, E ŚO ACONTCEM DE NOVO SE ALGO DA SENSIVITY LIST MUDAR OU APÓS O WAIT (TEMPO);

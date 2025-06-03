@@ -1,0 +1,10 @@
+v 4
+file . "ULA_tb.vhd" "17ee938f758e11399ade29b24bbb544aa3f86a40" "20250521001907.040":
+  entity ula_tb at 2( 14) + 0 on 45;
+  architecture sim of ula_tb at 9( 114) + 0 on 46;
+file . "ULA.vhd" "b32f97cbdac82762868987a635b029a9a09c68e6" "20250521001902.091":
+  entity ula at 1( 0) + 0 on 43;
+  architecture a_ula of ula at 17( 519) + 0 on 44;
+file . "acumulador.vhd" "e6516804de1abb62d986178c3c05ad0f3892b378" "20250520235835.135":
+  entity acumulador at 1( 0) + 0 on 19;
+  architecture a_acumulador of acumulador at 15( 307) + 0 on 20;

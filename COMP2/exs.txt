@@ -1,0 +1,39 @@
+1)  64 + 16 + 4 = 84 (base 10) = 0101 0100 (base 2)
+1010 1011 + 0000 0001 = -84 
+= 1010 1100
+
+
+2) "Carry" é o estouro de um número unsigned e "overflow", de um número signed, ambos resultado de uma operação.
+ Exemplo:
+ overflow: 
+ 7 + 2 = 9 (base 10)
+ 0111 + 0010 = 1001, mas 1001 = -7 em decimal; 
+ 	   
+ 	   
+carry:     
+ 8 + 8 = 16 (base 10)
+em 4 bits (base 2) 1000 + 1000 = CARRY [gera carry out (10000)]
+
+
+3) com 6 bits, podemos representar os números de -32 a +31.
+a) 010010 (descarta o carry out da esquerda)
+b) +18
+c) sim
+d) sim
+
+
+4) As operaçõs de soma, subtração e shift à esquerda (<<) são as mesmas para signed e unsigned (A forma como elas são feitas é exatamente a mesma, sem avaliar se o número é positivo ou negativo.
+Comparações (>,<, <=, >=), divisão, módulo e shift à direita (>>) são diferentes para tipos signed e unsigned.
+
+
+5) O compilador transforma os tipos signed para unsigned. Então, na comparação " if(y<x)", caso y seja negativo, o valor analisado será (256 - |y|), o que pode gerar comparações erradas. 
+Além disso, nas linhas de atribuição ("z = w = y" e "w = z = x"), há atribuição de tipos diferentes, de modo que, se y < 0, z receberá (256 - |y|); se x > 127, como w e z são signed (variando de -128 a + 127), w receberá ( |x| - 256);  em ambos os casos,  ocorre overflow.
+
+
+6) ?????????????
+
+
+7) 22 (base 10) = 010110 (base 2)
+
+
+8) 8 (base 10) = 001000 (base 2)

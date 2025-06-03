@@ -1,0 +1,34 @@
+v 4
+file . "PC.vhd" "e37a076c8c9b79219efcabad2617dd68c777eeb9" "20250531134934.638":
+  entity pc at 1( 0) + 0 on 175;
+  architecture a_pc of pc at 15( 299) + 0 on 176;
+file . "ROM_tb.vhd" "1f496eafb26a486271dc146afc4e95a8c62aed8f" "20250525181833.154":
+  entity rom_tb at 1( 0) + 0 on 171;
+  architecture sim of rom_tb at 8( 100) + 0 on 172;
+file . "tb_ula_banco_acu.vhd" "5a9beee54952b64f839c6e36ccbe662e2899f362" "20250524214231.052":
+  entity tb_ula_banco_acu at 1( 0) + 0 on 167;
+  architecture atbuba of tb_ula_banco_acu at 8( 110) + 0 on 168;
+file . "ula_banco_acu.vhd" "98b325db7d125b04c8fe5930517db31a3561964f" "20250524214016.296":
+  entity ula_banco_acu at 1( 0) + 0 on 165;
+  architecture a_ula_banco_acu of ula_banco_acu at 23( 521) + 0 on 166;
+file . "registrador.vhd" "107838e86d6e36edac905966152e03bb4cff42ba" "20250521003547.993":
+  entity registrador at 1( 0) + 0 on 19;
+  architecture a_registrador of registrador at 15( 308) + 0 on 20;
+file . "acumulador.vhd" "e08289c5a415d5f8093aa996019460ec02db759d" "20250524142206.534":
+  entity acumulador at 1( 0) + 0 on 125;
+  architecture a_acumulador of acumulador at 15( 307) + 0 on 126;
+file . "ULA.vhd" "d298180b6e7cdd3e424a9ec1852694a7b1a204c7" "20250529200716.767":
+  entity ula at 1( 0) + 0 on 173;
+  architecture a_ula of ula at 20( 534) + 0 on 174;
+file . "bancoRegistradores.vhd" "ac99c7e07f9ab1eaad48817277acb915b7193941" "20250523011915.846":
+  entity bancoregistradores at 1( 0) + 0 on 101;
+  architecture a_bancoregistradores of bancoregistradores at 18( 458) + 0 on 102;
+file . "simulaTudo.vhd" "023dbeeeb1f92786176aefc24e64bba9573ba914" "20250524200537.418":
+  entity simulatudo at 1( 0) + 0 on 161;
+  architecture a_simulatudo of simulatudo at 8( 108) + 0 on 162;
+file . "ULA_tb.vhd" "2989424b39eeaf717aca94439964020e4633640c" "20250521014004.366":
+  entity ula_tb at 2( 14) + 0 on 41;
+  architecture sim of ula_tb at 9( 114) + 0 on 42;
+file . "ROM.vhd" "64c4012bd588fcc7b6f2f088b2071cf9ac3bb25e" "20250525181818.686":
+  entity rom at 1( 0) + 0 on 169;
+  architecture a_rom of rom at 13( 274) + 0 on 170;
