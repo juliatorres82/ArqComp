@@ -60,6 +60,21 @@ architecture a_rom_pc of ROM_pc_regInst is
     signal flagInicio  : std_logic := '1'; -- flag para poder iniciar  PC em 0. Dps do primeiro clock, a entrada dele recebe smp outaddPC
     signal mux_wrOutPC : unsigned(6 downto 0); -- sinal para quando jump_en == 1, daí escreve um sinal de fora
 
+
+    dfgsdfghsd
+    sdf
+    g
+    sdf
+    gsdf
+    g
+    d : for i in x to y generate
+        
+    end generate ; -- sdf
+    g
+    sdf
+    gsdf
+    g
+    d
 begin
 
     -- começa em 0 e volta pra 0 sempre q reseta. cc, sempre em 1
